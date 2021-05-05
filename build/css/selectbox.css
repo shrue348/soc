@@ -1,0 +1,33 @@
+
+.selectbox { position: relative; z-index: 8 !important; width: calc(100% - 45px); }
+.selectbox .select { 
+  padding: 14px 19px;
+  padding-right: 30px;
+  border: 0 none;
+  display: block;
+  color: #453f3f;
+  position: relative;
+  transition: all .2s ease;
+  text-align: center;
+  border: 0 none;
+	background: url("data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgZm9jdXNhYmxlPSJmYWxzZSIgZGF0YS1wcmVmaXg9ImZhbCIgZGF0YS1pY29uPSJhbmdsZS1kb3duIiByb2xlPSJpbWciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDI1NiA1MTIiIGNsYXNzPSJzdmctaW5saW5lLS1mYSBmYS1hbmdsZS1kb3duIGZhLXctOCBmYS05eCI+PHBhdGggZmlsbD0iY3VycmVudENvbG9yIiBkPSJNMTE5LjUgMzI2LjlMMy41IDIwOS4xYy00LjctNC43LTQuNy0xMi4zIDAtMTdsNy4xLTcuMWM0LjctNC43IDEyLjMtNC43IDE3IDBMMTI4IDI4Ny4zbDEwMC40LTEwMi4yYzQuNy00LjcgMTIuMy00LjcgMTcgMGw3LjEgNy4xYzQuNyA0LjcgNC43IDEyLjMgMCAxN0wxMzYuNSAzMjdjLTQuNyA0LjYtMTIuMyA0LjYtMTctLjF6IiBjbGFzcz0iIj48L3BhdGg+PC9zdmc+") no-repeat scroll calc(100% - 27px) center / 13px transparent;
+	cursor: pointer;
+  width: 100%;
+  text-align: left;
+  background-color: #fff;
+  border-radius: 20px;
+}
+.selectbox .select:active { opacity: .8; }
+/* .selectbox .selected, */
+/*.selectbox .sel { background-color: #ede4d9; }*/
+
+.selectbox .dropdown { top: 45px !important; padding: 14px 0; z-index: 10; background-color: #fff; bottom: auto !important; color: #fff; width: calc(100% + 45px); border-radius: 20px; box-shadow: 0 5px 8px rgba(0,0,0,0.2); }
+.selectbox .dropdown li { height: 2em; line-height: 2em; min-width: 200px; transition: all .2s ease; padding: 0 19px; cursor: pointer; color: #453f3f; border-radius: 0; }
+.selectbox .dropdown li:hover { background: rgb(55,158,42); background: linear-gradient(270deg, rgba(55,158,42,1) 0%, rgba(133,192,26,1) 100%); color: #fff;  }
+
+/*
+@media (max-width: 767px) {
+  .selectbox .select { height: 21px; line-height: 21px; font-size: 9px; }
+  .selectbox .dropdown { top: 24px !important; }
+  .selectbox .dropdown li { height: 21px; line-height: 21px; font-size: 9px; }
+}*/

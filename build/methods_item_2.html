@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/iconic.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/adaptive.css">
+	<link rel="stylesheet" href="css/selectbox.css">
+	<link rel="stylesheet" href="css/baguetteBox.min.css">
+</head>
+<body>
+
+<div class="header">
+	<div class="wrapper">
+		<div class="row flex-row">
+			<div class="header_logo col-">
+				<a href="/" class="header_logo__link">
+					<img src="img/logo.png" alt="Медицинский центр Да!" class="header_logo__img">
+				</a>
+			</div>
+			<div class="header_menu col-">
+				<button class="header_menu_toggle__close"></button>
+				<ul class="header_menu__list">
+					<li class="header_menu__item" data-dropdown>
+						<a href="/about.html" class="header_menu__link">О центре</a>
+						<ul class="header_submenu__list">
+							<li class="header_submenu__item"><a href="#" class="header_submenu__link">Вытяжение позвоночника <wbr>(Аутогравитациоонная терапия) </a></li>
+							<li class="header_submenu__item"><a href="#" class="header_submenu__link">Водолечение</a></li>
+							<li class="header_submenu__item"><a href="#" class="header_submenu__link">Физиотерапия</a></li>
+							<li class="header_submenu__item"><a href="#" class="header_submenu__link">Грязелечение</a></li>
+						</ul>
+					</li>
+					<li class="header_menu__item"><a href="/price.html" class="header_menu__link">Цены и Акции</a></li>
+					<li class="header_menu__item"><a href="/specs.html" class="header_menu__link">Специалисты</a></li>
+					<li class="header_menu__item"><a href="/directions.html" class="header_menu__link">Направления</a></li>
+					<li class="header_menu__item"><a href="/contacts.html" class="header_menu__link">Контакты</a></li>
+				</ul>
+				<hr>
+				<ul class="header_menu__list">
+					<li class="header_menu__item" data-dropdown>
+						<a href="/methods.html" class="header_menu__link" >Методы лечения</a>
+						<ul class="header_submenu__list">
+							<li class="header_submenu__item"><a href="#" class="header_submenu__link">Вытяжение позвоночника <wbr>(Аутогравитациоонная терапия) </a></li>
+							<li class="header_submenu__item"><a href="#" class="header_submenu__link">Водолечение</a></li>
+							<li class="header_submenu__item"><a href="#" class="header_submenu__link">Физиотерапия</a></li>
+							<li class="header_submenu__item"><a href="#" class="header_submenu__link">Грязелечение</a></li>
+						</ul>
+					</li>
+					<li class="header_menu__item" data-dropdown>
+						<a href="" class="header_menu__link" >Диагностика</a>
+						<ul class="header_submenu__list">
+							<li class="header_submenu__item"><a href="#" class="header_submenu__link">Вытяжение позвоночника <wbr>(Аутогравитациоонная терапия) </a></li>
+							<li class="header_submenu__item"><a href="#" class="header_submenu__link">Водолечение</a></li>
+							<li class="header_submenu__item"><a href="#" class="header_submenu__link">Физиотерапия</a></li>
+							<li class="header_submenu__item"><a href="#" class="header_submenu__link">Грязелечение</a></li>
+							<li class="header_submenu__item"><a href="#" class="header_submenu__link">Мануальная терапия</a></li>
+							<li class="header_submenu__item"><a href="#" class="header_submenu__link">Остеопатия</a></li>
+							<li class="header_submenu__item"><a href="#" class="header_submenu__link">Массаж</a></li>
+							<li class="header_submenu__item"><a href="#" class="header_submenu__link">Кинезотейпирование</a></li>
+							<li class="header_submenu__item"><a href="#" class="header_submenu__link">Лечебная физкультура</a></li>
+							<li class="header_submenu__item"><a href="#" class="header_submenu__link">Кинезотерапия</a></li>
+							<li class="header_submenu__item"><a href="#" class="header_submenu__link">Иглорефлексотерапия</a></li>
+							<li class="header_submenu__item"><a href="#" class="header_submenu__link">Криотерапия</a></li>
+							<li class="header_submenu__item"><a href="#" class="header_submenu__link">Кишечный диализ</a></li>
+							<li class="header_submenu__item"><a href="#" class="header_submenu__link">Медикаментозное лечение</a></li>
+							<li class="header_submenu__item"><a href="#" class="header_submenu__link">Психотерапевтическая коррекция</a></li>
+							<li class="header_submenu__item"><a href="#" class="header_submenu__link">Медицинский педикюр</a></li>
+						</ul>
+					</li>
+					<li class="header_menu__item"><a href="" class="header_menu__link header_menu__link-marker">Лабораторные исследования</a></li>
+				</ul>
+			</div>
+
+			<div class="header_info col-"">
+				<div class="header_info__tel">+7 (812) 323-15-03</div>
+				<div class="flex" style="align-items: center;">
+					<div class="_">
+						<div class="header_info__worktime">ПН-СБ 9:00 - 21:00</div>
+						<div class="header_info__worktime">ВС 10:00 - 18:00</div>
+					</div>
+					<div class="header_search_dropdown" data-dropdown>
+						<button type="button" class="btn_blank"></button>
+						<form class="dropdown-menu header_search_form">
+							<input type="text" class="header_search_form__input">
+							<button type="button" class="btn_blank header_search_form__clear" onclick="$('.header_search_form__input').val('').focus()"></button>
+							<button type="submit" style="display: none;"></button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="header_btns col-"">
+				<div class="header_dropdown" data-dropdown>
+					<button class="btn btn_wide">Задать вопрос</button>
+					<div class="dropdown-menu">
+						<button type="button" class="btn_blank close" onclick="$(this).parent().parent().removeClass('open')">
+							<svg 
+							xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink"
+							width="17px" height="18px">
+							<path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+							d="M10.621,9.000 L16.278,14.657 C16.864,15.242 16.864,16.192 16.278,16.778 C15.692,17.364 14.743,17.364 14.157,16.778 L8.500,11.121 L2.843,16.778 C2.257,17.364 1.307,17.364 0.722,16.778 C0.136,16.192 0.136,15.242 0.722,14.657 L6.379,9.000 L0.722,3.343 C0.136,2.757 0.136,1.807 0.722,1.222 C1.307,0.636 2.257,0.636 2.843,1.222 L8.500,6.878 L14.157,1.222 C14.743,0.636 15.692,0.636 16.278,1.222 C16.864,1.807 16.864,2.757 16.278,3.343 L10.621,9.000 Z"/>
+							</svg>
+						</button>
+
+						<div class="form row">
+							<div class="form-group col-12">
+								<input type="text" name="name" placeholder="Как вас зовут?*">
+							</div>
+							<div class="form-group col-12">
+								<input type="email" name="email" placeholder="На какой E-mail вам можно ответить?*">
+							</div>
+							<div class="form-group col-12">
+								<input type="tel" name="phone" placeholder="На какой номер вам можно посзвонить?*">
+							</div>
+
+							<div class="form-group col-12">
+								<textarea name="question" placeholder="Какой у вас вопрос?"></textarea>
+							</div>
+			
+							<div class="font12 aligncenter mgt15 mgb15 col-12">
+								* Все поля обязательны для заполнения.
+							</div>
+	
+							<div class="form-group col-12 aligncenter ">
+								<button type="button" type="button" class="btn btn_form">Отправить</button>
+							</div>
+						</div>
+
+						<div class="form form__success aligncenter" style="display: none;">
+							Спасибо! Мы свяжемся с вами в ближайшее время!
+						</div>
+					</div>
+				</div>
+
+				<div class="header_dropdown" data-dropdown>
+					<button class="btn btn_green btn_wide">Записаться на прием</button>
+					<div class="dropdown-menu">
+						<button type="button" class="btn_blank close" onclick="$(this).parent().parent().removeClass('open')">
+							<svg 
+							xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink"
+							width="17px" height="18px">
+							<path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+							d="M10.621,9.000 L16.278,14.657 C16.864,15.242 16.864,16.192 16.278,16.778 C15.692,17.364 14.743,17.364 14.157,16.778 L8.500,11.121 L2.843,16.778 C2.257,17.364 1.307,17.364 0.722,16.778 C0.136,16.192 0.136,15.242 0.722,14.657 L6.379,9.000 L0.722,3.343 C0.136,2.757 0.136,1.807 0.722,1.222 C1.307,0.636 2.257,0.636 2.843,1.222 L8.500,6.878 L14.157,1.222 C14.743,0.636 15.692,0.636 16.278,1.222 C16.864,1.807 16.864,2.757 16.278,3.343 L10.621,9.000 Z"/>
+							</svg>
+						</button>
+
+						<div class="form row">
+							<div class="form-group col-12">
+								<select name="" class="select" placeholder="Тема вопроса">
+									<!-- <option disabled>Тема вопроса</option> -->
+									<option value="Продукция">Лечение позвоночника</option>
+									<option value="еще">еще</option>
+								</select>
+							</div>
+									
+							<div class="form-group col-12">
+								<input type="text" name="lastname" placeholder="Фамилия">
+							</div>
+							<div class="form-group col-12">
+								<input type="tel" name="phone" placeholder="Телефон">
+							</div>
+							<div class="form-group col-12">
+								<input type="date" name="date" placeholder="дд.мм.гггг">
+							</div>
+							<div class="form-group col-12">
+								<input type="text" name="name" placeholder="Имя">
+							</div>
+							<div class="form-group col-12">
+								<input type="email" name="email" placeholder="E-mail">
+							</div>
+			
+							<div class="font12 aligncenter mgt15 mgb15 col-12">
+								* Все поля обязательны для заполнения.
+							</div>
+	
+							<div class="form-group col-12 aligncenter">
+								<button type="button" type="button" class="btn btn_form">Записаться</button>
+							</div>
+						</div>
+
+						<div class="form form__success aligncenter" style="display: none;">
+							Спасибо! Мы свяжемся с вами в ближайшее время!
+						</div>
+					</div>
+				</div>		
+			</div>
+
+			<button class="header_menu_toggle__btn"></button>
+		</div>
+	</div>
+</div>
+
+<div class="h1_wrap h1_wrap-methods">
+	<div class="wrapper">
+		<h1>Лечение заболеваний нервной системы</h1>
+	</div>
+</div>
+
+<div class="mgt30 mgb30">
+  <div class="wrapper">
+    <div class="method_banner" style="background-image: url(img/banner_back_2.png);">
+      <div class="method_banner__part">
+        <div class="method_banner__title">Лечение заболеваний<br>нервной системы</div>
+        <div class="method_banner__price">1500 ₽</div>
+      </div>
+      <div class="method_banner__part">
+        <div class="method_banner__desc">Запишитесь по телефону</div>
+        <div class="method_banner__phone">+7 (812) 323-15-03</div>
+        <button class="g_btn">Записаться на прием</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="content methods_content">
+  <div class="wrapper">
+    <div class="methods_content__txt mgb45">
+      <img src="img/nevrology.png" class="mgr30" alt="Неврология">
+      <div class="txt">
+        <p>Неврология – это патологические изменения, происходящие в нервной системе человека, затрагивающие центральную и периферические нервные системы.</p>
+        <p>Говоря более простым языком, можно сказать, что неврология – это наука, изучающая всю нервную систему человека как в нормальном состоянии, так и при возникновении нарушений.</p>
+        <p>Нервная система играет ведущую роль в функционировании организма. Именно она отвечает за работу всех органов и систем, начиная от работы сердца и заканчивая ростом волос и ногтей. Конечно же, про роль всех остальных внутренних органов забывать тоже нельзя. </p>
+        <p>Именно нервная система является связывающим звеном и передает импульсы к головному мозгу. Так как нервная система это один из важных приоритетов  в жизни человека, она подвергается сильным стрессам и ударам, а значит и она может болеть.  </p>
+        <p>В медицине их называют – неврологические заболевания, в народе — болезни нервной системы.</p>
+      </div>
+    </div>
+
+    <div class="color_block">
+			<div class="color_block__title">Список заболеваний нервной системы</div>
+      <div class="color_block__content">
+        <div class="txt">
+          <ul class="row">
+            <li class="col-6">Невралгия – это заболевания периферических нервов, с приступами острой боли.</li>
+            <li class="col-6">Невриты – это воспаление периферических нервов, со снижением или даже потерей чувствительности.</li>
+            <li class="col-6">Параличи (включая лечение межпозвонковой грыжи, радикулита) – это болезнь, лишающая частично или полностью движения тот или иной орган тела.</li>
+            <li class="col-6">Вегетососудистая дистония – это нарушение нервной системы, вместе с этим нарушается общее состояние и самочувствие человека.</li>
+            <li class="col-6">Мигрень – сильный приступ головной боли</li>
+            <li class="col-6">Невроз – вызывает расстройство деятельности нервной системы.</li>
+            <li class="col-6">Нервные тики – быстрое непроизвольное сокращение мышц, вызванные расстройством нервной системы.</li>
+            <li class="col-6">Синдром хронической усталости — не проходимое чувство</li>
+            <li class="col-6">переутомления и усталости, нехватка сил, даже после долгого отдыха.</li>
+            <li class="col-6">Нарушение сна</li>
+            <li class="col-6">Недомогания</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="methods">
+  <div class="wrapper">
+    <div class="block_title">Методы лечения</div>
+
+    <div class="row">
+      <div class="col-by5">
+        <a href="" class="btn methods__link">
+          <div class="main_section__title">Подология</div>
+        </a>
+      </div>
+      <div class="col-by5">
+        <a href="" class="btn methods__link">
+          <div class="main_section__title">Консультация психотерапевта</div>
+        </a>
+      </div>
+      <div class="col-by5">
+        <a href="" class="btn methods__link">
+          <div class="main_section__title">Очищение организма</div>
+        </a>
+      </div>
+      <div class="col-by5">
+        <a href="" class="btn methods__link">
+          <div class="main_section__title">Медикаментозное лечение</div>
+        </a>
+      </div>
+      <div class="col-by5">
+        <a href="" class="btn methods__link">
+          <div class="main_section__title">Криотерапия</div>
+        </a>
+      </div>
+      <div class="col-by5">
+        <a href="" class="btn methods__link">
+          <div class="main_section__title">Иглорефлексо<wbr>терапия</div>
+        </a>
+      </div>
+      <div class="col-by5">
+        <a href="" class="btn methods__link">
+          <div class="main_section__title">Гирудотерапия</div>
+        </a>
+      </div>
+      <div class="col-by5">
+        <a href="" class="btn methods__link">
+          <div class="main_section__title">Мануальная терапия позвоночника</div>
+        </a>
+      </div>
+      <div class="col-by5">
+        <a href="" class="btn methods__link">
+          <div class="main_section__title">Кинезотерапия</div>
+        </a>
+      </div>
+      <div class="col-by5">
+        <a href="" class="btn methods__link">
+          <div class="main_section__title">Лечение физиотерапией</div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="content methods_content">
+  <div class="wrapper">
+    <div class="row">
+      <div class="col-6 txt">
+        <h2>Эффект от лечения</h2>
+        <p>Физиотерапия способствует:</p>
+        <ul>
+          <li>пробуждению резервов организма;</li>
+          <li>активации естественных процессов;</li>
+          <li>снижению или устранению болевого синдрома;</li>
+          <li>усилению защитных свойств организма;</li>
+          <li>нормализации кровообращения;</li>
+          <li>предупреждению рецидивов и усилению эффекта от лечения.</li>
+        </ul>
+        <p>Выбор методики, интенсивность воздействий и продолжительность курса определяет наш специалист. Врач принимает решение на основе результатов диагностики, истории болезни и осмотра пациента.</p>
+      </div>
+      <div class="col-6">
+        <img src="img/consultation.png" alt="Консультации по телефону">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="content methods_content">
+  <div class="wrapper">
+    <div class="row">
+      <div class="col-6">
+        <img src="img/fixtures/fisio.png" alt="Методы физиотерапии">
+      </div>
+      <div class="col-6 txt">
+        <h2>Методы физиотерапии</h2>
+        <p>У нас проводится:</p>
+        <ul>
+          <li>электролечение (электроанальгезия, электрофорез,</li>
+          <li>электромиостимуляция, дарсонваль);</li>
+          <li>лечение ультразвуком (фонофорез);</li>
+          <li>магнитотерапия и вакуумный массаж в сочетании с лазером;</li>
+          <li>(баролазеротерапия);</li>
+          <li>лечение лазером (лазеротерапия).</li>
+        </ul>
+        <p>Выбор методики, интенсивность воздействий и продолжительность курса определяет наш специалист. Врач принимает решение на основе результатов диагностики, истории болезни и осмотра пациента.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="preims">
+  <div class="wrapper">
+    <div class="block_title">Преимущества медицинского центра «ДА»</div>
+
+    <div class="row">
+
+      <div class="col-3">
+        <div class="preims__item">
+          <div class="preims__img_wrap"><img src="img/preims_icon_6.png" alt="Услуги опытных профессионалов" class="preims__img"></div>
+          <div class="preims__title">Услуги опытных профессионалов, регулярно повышающих свою квалификацию.</div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="preims__item">
+          <div class="preims__img_wrap"><img src="img/preims_icon_7.png" alt="Современное оборудование" class="preims__img"></div>
+          <div class="preims__title">Современное оборудование для физиотерапии и комфортные условия для восстановления в СПА-центре.</div>
+        </div>
+      </div>
+      
+      <div class="col-3">
+        <div class="preims__item">
+          <div class="preims__img_wrap"><img src="img/preims_icon_8.png" alt="Тщательная диагностика" class="preims__img"></div>
+          <div class="preims__title">Тщательная диагностика и подбор индивидуального курса лечения.</div>
+        </div>
+      </div>
+
+      <div class="col-3">
+        <div class="preims__item">
+          <div class="preims__img_wrap"><img src="img/preims_icon_9.png" alt="Акции и скидки:" class="preims__img"></div>
+          <div class="preims__title">Акции и скидки: обладателям карт «Альфа – Банка» и Cosmopolitan – VISA — 10%, владельцам индивидуальных карт — услуги по сниженным ценам и участие в бонусной программе.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="content methods_content">
+  <div class="wrapper">
+    <div class="block_title mgb15">Лечение</div>
+    <div class="row">
+      <div class="col-6 txt">
+        <p>Любое заболевание нервной системы, очень опасно своими осложнениями. Поэтому, при первых появлениях симптомов необходимо обращаться к врачу. Своевременное лечение и наблюдение невролога приведет к улучшению состояния здоровья и полному выздоровлению. А выбор типа лечения будет зависеть от результатов диагностики, от степени заболевания и интенсивности его развития.</p>
+      </div>
+      <div class="oklist col-6">
+        <a href="" class="oklist__link">Список методов-ссылок</a>
+        <a href="" class="oklist__link">Список методов-ссылок</a>
+        <a href="" class="oklist__link">Список методов-ссылок</a>
+        <a href="" class="oklist__link">Список методов-ссылок</a>
+        <a href="" class="oklist__link">Список методов-ссылок</a>
+        <a href="" class="oklist__link">Список методов-ссылок</a>
+        <a href="" class="oklist__link">Список методов-ссылок</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="content">
+  <div class="wrapper">
+    <div class="textonimage">
+      <div class="block_title mgb15">Способы лечения</div>
+      <div class="txt">
+        <p>Способов лечения в неврологии существует большое количество, впрочем, как и симптомов самих заболеваний. К методам лечения, в первую очередь, относится комплекс, включающий в себя <span class="b colorgreen">медикаментозное лечение</span> и <span class="b colorgreen">мануальную терапию</span>, а также сеансы иглорефлексотерапии, гирудотерапии и физиотерапии.</p>
+        <p>Именно такой комплекс используют врачи медицинского центра “Да!”, сочетая его с индивидуальным подходом к каждому пациенту, что и является, одним из самых главных, преимуществом.</p>
+        <p>Второе главное преимущество «Медицинского центра ДА!» — это большой спектр услуг, который позволит Вам с максимальным комфортом пройти весь курс лечения, не обращаясь в другие центры за дополнительным лечением.</p>  
+      </div>
+     </div>
+  </div>
+</div>
+
+<div class="content methods_content">
+  <div class="wrapper">
+    <div class="price_accordeon">
+			<button class="price_accordeon__toggle collapsed" type="button" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">Стоимость услуг</button>
+
+			<div class="collapse" id="collapseExample1">
+				<div class="price_list">
+					<div class="price_list_item">Первичная консультация невролога, вертеброневролога (входит диагностика Медискрин)	<span class="price_list_item__price">1500</span></div>
+					<div class="price_list_item">Повторная консультация невролога, вертеброневролог <span class="price_list_item__price">900</span></div>
+					<div class="price_list_item">Промежуточная консультация в курсе лечения <span class="price_list_item__price">0</span></div>
+					<div class="price_list_item">Заключительная консультация невролога, вертеброневролога <span class="price_list_item__price">750</span></div>
+					<div class="price_list_item">Первичная консультация терапевта (Гастроэнтеролог, Эндокринолог, Кардиолог) <span class="price_list_item__price">2000</span></div>
+					<div class="price_list_item">Повторная консультация терапевта (Гастроэнтеролог, Эндокринолог, Кардиолог <span class="price_list_item__price">1000</span></div>
+					<div class="price_list_item">Первичная консультация диетолог <span class="price_list_item__price">1500</span></div>
+					<div class="price_list_item">Повторная консультация диетолога <span class="price_list_item__price">900</span></div>
+					<div class="price_list_item">Консультация мануального терапевта <span class="price_list_item__price">1500</span></div>
+					<div class="price_list_item">Консультация рефлексотерапевта <span class="price_list_item__price">1500</span></div>
+					<div class="price_list_item">Консультация гирудотерапевта <span class="price_list_item__price">1500</span></div>
+					<div class="price_list_item">Консультация врача ЛФК, кинезотерапевта <span class="price_list_item__price">1500</span></div>
+					<div class="price_list_item">Консультация психотерапевта <span class="price_list_item__price">2500</span></div>
+				</div>
+			</div>
+		</div>
+  </div>
+</div>
+
+
+<div class="cert">
+  <div class="wrapper">
+    <div class="block_title">Наши лицензии на медицинскую деятельность</div>
+
+    <div class="cert_list baguetteBox">
+      <div class="row">
+        <div class="col-3">
+          <a class="cert_item" href="img/fixtures/cert1.png">
+            <img src="img/fixtures/cert1.png" alt="" class="cert_item__img">
+          </a>
+        </div>
+        <div class="col-3">
+          <a class="cert_item" href="img/fixtures/cert2.png">
+            <img src="img/fixtures/cert2.png" alt="" class="cert_item__img">
+          </a>
+        </div>
+        <div class="col-3">
+          <a class="cert_item" href="img/fixtures/cert3.png">
+            <img src="img/fixtures/cert3.png" alt="" class="cert_item__img">
+          </a>
+        </div>
+        
+        <div class="col-3">
+          <a class="cert_item" href="img/fixtures/cert4.png">
+            <img src="img/fixtures/cert4.png" alt="" class="cert_item__img">
+          </a>
+        </div>
+        
+        <div class="col-3">
+          <a class="cert_item" href="img/fixtures/cert4.png">
+            <img src="img/fixtures/cert4.png" alt="" class="cert_item__img">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="content">
+  <div class="wrapper">
+    <div class="block_title">Консультации специалистов</div>
+
+    <div class="bottom_consult__list row">
+      <div class="bottom_consult__item col-by5">
+        <a href="#" class="bottom_consult__link">
+          <div class="bottom_consult__img">
+            <img src="img/consult_icon1.png" alt="Консультация вертебролога">
+          </div>
+          Консультация вертебролога
+        </a>
+      </div>
+      <div class="bottom_consult__item col-by5">
+        <a href="#" class="bottom_consult__link">
+          <div class="bottom_consult__img">
+            <img src="img/consult_icon2.png" alt="Консультация невролога">
+          </div>
+          Консультация невролога
+        </a>
+      </div>
+      <div class="bottom_consult__item col-by5">
+        <a href="#" class="bottom_consult__link">
+          <div class="bottom_consult__img">
+            <img src="img/consult_icon3.png" alt="Консультация ревматолога">
+          </div>
+          Консультация ревматолога
+        </a>
+      </div>
+      <div class="bottom_consult__item col-by5">
+        <a href="#" class="bottom_consult__link">
+          <div class="bottom_consult__img">
+            <img src="img/consult_icon4.png" alt="Консультация травматолога">
+          </div>
+          Консультация травматолога
+        </a>
+      </div>
+      <div class="bottom_consult__item col-by5">
+        <a href="#" class="bottom_consult__link">
+          <div class="bottom_consult__img">
+            <img src="img/consult_icon5.png" alt="Консультация гастроэнтеролога">
+          </div>
+          Консультация гастроэнтеролога
+        </a>
+      </div>
+      <div class="bottom_consult__item col-by5">
+        <a href="#" class="bottom_consult__link">
+          <div class="bottom_consult__img">
+            <img src="img/consult_icon6.png" alt="Консультация дерматолога">
+          </div>
+          Консультация дерматолога
+        </a>
+      </div>
+      <div class="bottom_consult__item col-by5">
+        <a href="#" class="bottom_consult__link">
+          <div class="bottom_consult__img">
+            <img src="img/consult_icon7.png" alt="Консультация врача диетолога">
+          </div>
+          Консультация врача диетолога 
+        </a>
+      </div>
+      <div class="bottom_consult__item col-by5">
+        <a href="#" class="bottom_consult__link">
+          <div class="bottom_consult__img">
+            <img src="img/consult_icon8.png" alt="Консультация психолога">
+          </div>
+          Консультация психолога
+        </a>
+      </div>
+      <div class="bottom_consult__item col-by5">
+        <a href="#" class="bottom_consult__link">
+          <div class="bottom_consult__img">
+            <img src="img/consult_icon9.png" alt="Консультация косметолога">
+          </div>
+          Консультация косметолога
+        </a>
+      </div>
+      <div class="bottom_consult__item col-by5">
+        <a href="#" class="bottom_consult__link">
+          <div class="bottom_consult__img">
+            <img src="img/consult_icon10.png" alt="Консультацияреабилитолога">
+          </div>
+          Консультация реабилитолога
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="bottom_form">
+  <div class="wrapper">
+    <div class="bottom_form__form">
+      <div class="bottom_form__title">Записаться на прием</div>
+
+      <div class="form row">
+        <div class="form-group col-4">
+          <select name="" class="select" placeholder="Тема вопроса">
+            <!-- <option disabled>Тема вопроса</option> -->
+            <option value="Продукция">Лечение позвоночника</option>
+            <option value="еще">еще</option>
+          </select>
+        </div>
+            
+        <div class="form-group col-4">
+          <input type="text" name="lastname" placeholder="Фамилия">
+        </div>
+        <div class="form-group col-4">
+          <input type="tel" name="phone" placeholder="Телефон">
+        </div>
+        <div class="form-group col-4">
+          <input type="date" name="date" placeholder="дд.мм.гггг">
+        </div>
+        <div class="form-group col-4">
+          <input type="text" name="name" placeholder="Имя">
+        </div>
+        <div class="form-group col-4">
+          <input type="email" name="email" placeholder="E-mail">
+        </div>
+        <div class="form-group col-12 aligncenter mgt20 mgb30">
+          <button type="button" class="btn btn_form" style="font-size: 21px;">Записаться</button>
+        </div>
+      </div>
+
+      <div class="bottom_form__desc">* Все поля обязательны для заполнения.<br>Нажимая кнопку «Записаться», вы подтверждаете, что ознакомлены и согласны с условиями <a href="politic.html">Политики конфиденциальности</a>.</div>
+    </div>
+
+    <div class="bottom_form__loading loading" style="display: none; height: 300px;"></div>
+
+    <div class="bottom_form__success" style="min-height: 300px; display: flex; justify-content: center; align-items: center; flex-direction: column; display: none;">
+      <div class="bottom_form__title">Спасибо за обращение</div>
+      <div class="bottom_form__desc">Мы свяжемся с вами в ближайшее время.</div>
+
+      <div style="font-size: 4em; display: flex; justify-content: center; align-items: center; margin-top: 30px;">
+        <i class="icon-ok"></i>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="bottom_info">
+  <div class="wrapper">
+    <div class="block_title mgb10">Полезная информация </div>
+
+    <div class="bottom_info__list row">
+      <div class="col-6"><a href="#" class="bottom_info__link">Основные направления деятельности</a></div>
+      <div class="col-6"><a href="#" class="bottom_info__link">Лечения заболеваний опорно-двигательного аппарата</a></div>
+      <div class="col-6"><a href="#" class="bottom_info__link">Периферическая нервная система</a></div>
+      <div class="col-6"><a href="#" class="bottom_info__link">Методы мануальной терапии</a></div>
+      <div class="col-6"><a href="#" class="bottom_info__link">Основные направления деятельности</a></div>
+      <div class="col-6"><a href="#" class="bottom_info__link">Лечения заболеваний опорно-двигательного аппарата </a></div>
+      <div class="col-6"><a href="#" class="bottom_info__link">Периферическая нервная система </a></div>
+      <div class="col-6"><a href="#" class="bottom_info__link">Методы мануальной терапии</a></div>
+    </div>
+  </div>
+</div>
+
+<div class="footer_top">
+  <div class="wrapper">
+    <div class="row flex-row">
+      <div class="footer_logo col-">
+        <img src="img/logo.png" alt="Медицинский центр Да!" class="footer_logo__img">
+      </div>
+      <div class="footer_location col-">
+        <span>г. Санкт-Петербург,<br>Средний проспект В.О., д. 17</span>
+      </div>
+      <div class="footer_phone col-">
+        <span>+7 (812) 323-15-03</span>
+      </div>
+      <div class="footer_email col-">
+        <a href="mailto:da-med@list.ru">da-med@list.ru</a>
+      </div>
+      <div class="footer_info col-">
+        <div class="footer_info__worktime">ПН-СБ 9:00 - 21:00</div>
+				<div class="footer_info__worktime">ВС 10:00 - 18:00</div>
+      </div>
+      <div class="footer_soc col-">
+        <a href="" class="footer_soc__item">
+          <img src="img/fb_icon.png" alt="FaceBook">
+        </a>
+        <a href="" class="footer_soc__item">
+          <img src="img/vk_icon.png" alt="Vkontakte">
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer_middle">
+  <div class="wrapper">
+    <div class="row flex-row">
+      <div class="footer_menu col-">
+        <div class="footer_menu__list">
+          <a href="/about.html" class="footer_menu__link">О центре</a>
+          <a href="/directions.html" class="footer_menu__link">Направления</a>
+          <a href="/methods.html" class="footer_menu__link">Методы лечения</a>
+          <a href="" class="footer_menu__link">Диагностика</a>
+					<a href="/price.html" class="footer_menu__link">Цены и Акции</a>
+					<a href="/specs.html" class="footer_menu__link">Специалисты</a>
+					<a href="/contacts.html" class="footer_menu__link">Контакты</a>
+					<a href="/news.html" class="footer_menu__link">Новости</a>
+				</div>
+      </div>
+      <div class="footer_btns col-">
+        <div class="header_dropdown header_dropdown-top" data-dropdown>
+          <button class="btn btn_green">Задать вопрос</button>
+					<div class="dropdown-menu">
+						<button class="btn_blank close" onclick="$(this).parent().parent().removeClass('open')">
+							<svg 
+							xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink"
+							width="17px" height="18px">
+							<path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+							d="M10.621,9.000 L16.278,14.657 C16.864,15.242 16.864,16.192 16.278,16.778 C15.692,17.364 14.743,17.364 14.157,16.778 L8.500,11.121 L2.843,16.778 C2.257,17.364 1.307,17.364 0.722,16.778 C0.136,16.192 0.136,15.242 0.722,14.657 L6.379,9.000 L0.722,3.343 C0.136,2.757 0.136,1.807 0.722,1.222 C1.307,0.636 2.257,0.636 2.843,1.222 L8.500,6.878 L14.157,1.222 C14.743,0.636 15.692,0.636 16.278,1.222 C16.864,1.807 16.864,2.757 16.278,3.343 L10.621,9.000 Z"/>
+							</svg>
+						</button>
+
+						<div class="form row">
+							<div class="form-group col-12">
+								<input type="text" name="name" placeholder="Как вас зовут?*">
+							</div>
+							<div class="form-group col-12">
+								<input type="email" name="email" placeholder="На какой E-mail вам можно ответить?*">
+							</div>
+							<div class="form-group col-12">
+								<input type="tel" name="phone" placeholder="На какой номер вам можно посзвонить?*">
+							</div>
+
+							<div class="form-group col-12">
+								<textarea name="question" placeholder="Какой у вас вопрос?"></textarea>
+							</div>
+			
+							<div class="font12 aligncenter mgt15 mgb15 col-12">
+								* Все поля обязательны для заполнения.
+							</div>
+	
+							<div class="form-group col-12 aligncenter ">
+								<button type="button" class="btn btn_form">Отправить</button>
+							</div>
+						</div>
+
+						<div class="form form__success" style="display: none;">
+							Спасибо! Мы свяжемся с вами в ближайшее время!
+						</div>
+					</div>
+				</div>
+				<div class="header_dropdown header_dropdown-top" data-dropdown>
+					<button class="btn btn_green">Записаться на прием</button>
+					<div class="dropdown-menu">
+						<button class="btn_blank close" onclick="$(this).parent().parent().removeClass('open')">
+							<svg 
+							xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink"
+							width="17px" height="18px">
+							<path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+							d="M10.621,9.000 L16.278,14.657 C16.864,15.242 16.864,16.192 16.278,16.778 C15.692,17.364 14.743,17.364 14.157,16.778 L8.500,11.121 L2.843,16.778 C2.257,17.364 1.307,17.364 0.722,16.778 C0.136,16.192 0.136,15.242 0.722,14.657 L6.379,9.000 L0.722,3.343 C0.136,2.757 0.136,1.807 0.722,1.222 C1.307,0.636 2.257,0.636 2.843,1.222 L8.500,6.878 L14.157,1.222 C14.743,0.636 15.692,0.636 16.278,1.222 C16.864,1.807 16.864,2.757 16.278,3.343 L10.621,9.000 Z"/>
+							</svg>
+						</button>
+
+						<div class="form row">
+							<div class="form-group col-12">
+								<select name="" class="select" placeholder="Тема вопроса">
+									<!-- <option disabled>Тема вопроса</option> -->
+									<option value="Продукция">Лечение позвоночника</option>
+									<option value="еще">еще</option>
+								</select>
+							</div>
+									
+							<div class="form-group col-12">
+								<input type="text" name="lastname" placeholder="Фамилия">
+							</div>
+							<div class="form-group col-12">
+								<input type="tel" name="phone" placeholder="Телефон">
+							</div>
+							<div class="form-group col-12">
+								<input type="date" name="date" placeholder="дд.мм.гггг">
+							</div>
+							<div class="form-group col-12">
+								<input type="text" name="name" placeholder="Имя">
+							</div>
+							<div class="form-group col-12">
+								<input type="email" name="email" placeholder="E-mail">
+							</div>
+			
+							<div class="font12 aligncenter mgt15 mgb15 col-12">
+								* Все поля обязательны для заполнения.
+							</div>
+	
+							<div class="form-group col-12 aligncenter">
+								<button type="button" class="btn btn_form">Записаться</button>
+							</div>
+						</div>
+
+						<div class="form form__success" style="display: none;">
+							Спасибо! Мы свяжемся с вами в ближайшее время!
+						</div>
+					</div>
+				</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer_bottom">
+  <div class="wrapper">
+    © 2006-2019 — Медицинский центр "Да!" Все права защищены<br>
+    <a href="">Политика конфиденциальности</a>
+  </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/baguetteBox.min.js"></script>
+<script src="js/parallax.js"></script>
+<script src="js/slick.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/selectbox.min.js"></script>
+<script src="js/ready.js"></script>
+
+</body>
+</html>
