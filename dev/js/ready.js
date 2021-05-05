@@ -45,9 +45,53 @@ $(function(){
   $('[name=phone]').mask("+7 (999) 999-9999");
 })
 
-$(function() { 
+$(function(){ 
   $('select.select').selectbox();
-});  
+});
+
+$(function(){
+  var fontSize = localStorage.getItem('fontSize');
+  if (fontSize) $('body').css('font-size', fontSize + 'px');
+
+  $('.header_font__btn-minus').on('click', function(){
+    var fontSize = $('body').css('font-size').split('px')[0];
+    fontSize = Number(fontSize) - 1;
+    $('body').css('font-size', fontSize + 'px');
+    localStorage.setItem('fontSize', fontSize);
+  });
+
+  $('.header_font__btn-plus').on('click', function(){
+    var fontSize = $('body').css('font-size').split('px')[0];
+    fontSize = Number(fontSize) + 1;
+    $('body').css('font-size', fontSize + 'px');
+    localStorage.setItem('fontSize', fontSize);
+  });
+
+
+  if (matchMedia) {
+    const mq = window.matchMedia("(min-width: 768px)");
+    mq.addListener(WidthChange);
+    WidthChange(mq);
+  }
+  
+  // media query change
+  function WidthChange(mq) {
+    if (mq.matches) {
+      $('body').css('font-size', 20 + 'px');
+    } else {
+      $('body').css('font-size', 16 + 'px');
+    }
+  }
+
+  $('.main_menu__toggle').on('click', function(){
+    $('.main_menu__overlay').toggleClass('active');
+    $('.main_menu').toggleClass('active');
+  })
+  $('.main_menu__overlay').on('click', function(){
+    $('.main_menu__overlay').removeClass('active');
+    $('.main_menu').removeClass('active');
+  })
+});
 
 $(function(){
   $('.header_slider').slick({

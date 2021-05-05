@@ -10,9 +10,9 @@
         <a href="tel:8(800)207-12-83" class="header_phone">8 (800) 207-12-83</a>
 
         <div class="header_font">
-					Размер текста:
-          <a href="javascript:;" onclick="$('body').css({'font-size': $('body').css('font-size') + 1})" role="button" class="header_font__btn header_font__btn-plus">+</a>
-          <a href="javascript:;" onclick="$('body').css({'font-size': $('body').css('font-size') - 1})" role="button" class="header_font__btn header_font__btn-minus">-</a>
+					<div class="header_font__label">Размер текста:</div>
+          <a href="javascript:;" role="button" class="header_font__btn header_font__btn-plus">+</a>
+          <a href="javascript:;" role="button" class="header_font__btn header_font__btn-minus">-</a>
         </div>
 
         <div class="header_lang">
@@ -20,6 +20,8 @@
           <a href="" class="header_lang__link header_lang__link-eng">eng</a>
         </div>
       </div>
+			<button class="main_menu__toggle" type="button"><i class="icon-menu"></i></button>
+			<div class="main_menu__overlay"></div>
 			<nav class="main_menu">
 				<a href="/transport.html" class="main_menu__link main_menu__link-active">О системе</a>
 				<a href="/transport2.html" class="main_menu__link">Карта объектов</a>
