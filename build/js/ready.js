@@ -136,6 +136,25 @@ $(function(){
     ]
   });
 
+  $('.last_news .reviews_carousel .row').slick({
+    infinite: true,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    swipeToSlide: true,
+    arrows: true,
+    dots: false,
+    prevArrow: '<button class="news_carousel__btn news_carousel__btn-left"></button>',
+    nextArrow: '<button class="news_carousel__btn news_carousel__btn-right"></button>',
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
+  });
+
   $('.partners .news_carousel .row').slick({
     infinite: true,
     slidesToShow: 5,
@@ -177,4 +196,62 @@ $(function(){
     arrows: false,
     dots: true,
   });
+});
+
+/* table overflow for mobile */
+$(function(){ 
+  $('.txt table').each(function(){
+      $(this).wrap('<div class="table_scroll"></div>')
+      $(this).before('<div class="hand show"><i class="icon-up-hand"></i></div>');
+  });
+
+  function scrollTable() {
+    $('.table_scroll').each(function() {
+      if($(this).get(0).scrollWidth > ($(this).get(0).clientWidth)+1){
+        $(this).addClass('scrollable');
+        if (($(this).outerWidth() + $(this).scrollLeft()) < $(this).get(0).scrollWidth) {
+          $(this).addClass('scrollRight');
+        }else{
+          $(this).removeClass('scrollRight');
+        }
+        
+        if ($(this).scrollLeft() != 0) {
+          $(this).addClass('scrollLeft');
+        }else{
+          $(this).removeClass('scrollLeft');
+        }       
+      } else {
+        $(this).removeClass('scrollable')
+          .removeClass('scrollLeft')
+          .removeClass('scrollRight'); 
+      }
+    });
+  }
+  scrollTable();
+  $('.table_scroll').scroll(function () { scrollTable(); });
+  $(window).bind('orientationchange resize', function(event){scrollTable(); });
+});
+
+
+$(function(){
+  $('input[type=file]').each(function() {
+    var $input = $(this),
+        $label = $input.next('.js-labelFile'),
+        labelVal = $label.html();
+
+    $input.hide();
+    $input.on('change', function(element) {
+      var fileName = '';
+      if (element.target.value) fileName = element.target.value.split('\\').pop();
+      fileName ? $label.addClass('has-file').find('.js-fileName').html(fileName) : $label.removeClass('has-file').html(labelVal);
+    });
+  });
+});
+
+
+$(function(){
+  $('.main_menu__link-about').on('click', function(e) {
+    e.preventDefault();
+    $('.about_modal').fadeIn();
+  })
 });

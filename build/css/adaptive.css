@@ -68,6 +68,9 @@
     grid-template-columns: 3fr 3fr 3fr;
     grid-gap: 15px;
   }
+
+  .objects_txt table { min-width: 768px; }
+  .about_modal__title { font-size: .9em; } 
 }
 
 @media (max-width: 570px) {

@@ -1,0 +1,112 @@
+//= _header.html
+//= _header_block_inside.html
+
+<div class="wrapper">
+  <h1 class="section_title">Контакты</h1>
+
+  <div class="contacts_txt txt">
+    <div class="row flex mgb60">
+      <div class="col-6">
+        <div class="contacts_txt__item contacts_txt__item-location">
+          Торфяная дорога, д.7, <br>
+          Бизнес-центр “Гулливер-2” <br>
+          Санкт-Петербург, Россия , 197374
+        </div>
+        <div class="contacts_txt__item contacts_txt__item-road">
+          Как добраться <br><br>
+          От станция метро “Старая деревня” <br>
+          5 минут пешком <br><br>
+          От станции метро “Пионерская” троллейбус №40, автобус №93<br><br>
+          От станции метро “Беговая”<br>
+          автобусы №101, №101А, №216
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="contacts_txt__item contacts_txt__item-phone">
+          Телефон отдела маркетинга: <br>
+          +7 (812) 207-12-83
+        </div>
+        <div class="contacts_txt__item contacts_txt__item-fax">
+          Факс: <br>
+          +7 (812) 244-46-72
+        </div>
+        <div class="contacts_txt__item contacts_txt__item-email">
+          Электронная почта: <br>
+          info@stp-ing.com
+        </div>
+
+        <div class="contacts_soc">
+          <a href="" class="contacts_soc__link contacts_soc__link-vk"></a>
+          <a href="" class="contacts_soc__link contacts_soc__link-fb"></a>
+          <a href="" class="contacts_soc__link contacts_soc__link-ok"></a>
+          <a href="" class="contacts_soc__link contacts_soc__link-youtube"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="contacts_map" class="contacts_map"></div>
+
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script>
+  function init() {
+    var myMap = new ymaps.Map("contacts_map", {
+      center: [59.944446, 30.282646],
+      zoom: 16,
+      controls: []
+    }, {
+      searchControlProvider: 'yandex#search'
+    }),
+
+    myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+      hintContent: 'Хинт'
+    }, {
+      iconLayout: 'default#image',
+      iconImageHref: 'img/location_icon.png',
+      iconImageSize: [42, 42],
+      iconImageOffset: [-21, -21]
+    });
+
+    myMap.geoObjects.add(myPlacemark);
+  }
+
+  ymaps.ready(init);
+</script>
+
+
+<section class="section last_news">
+  <div class="wrapper">
+    <h2 class="section_title">Отзывы</h2>
+
+    <div class="reviews_carousel">
+      <div class="row">
+        <div class="col-6">
+          <div class="reviews_carousel__item">
+            <div class="reviews_carousel__title b">Анна Петрова</div>
+            <div class="reviews_carousel__title">«Говорящий город» — система радиоинформирования и звукового ориентирования, повышающая доступность городской и транспортной инфраструктуры.</div>
+            <a href="" class="reviews_carousel__link">Читать полностью</a>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="reviews_carousel__item">
+            <div class="reviews_carousel__title b">Анна Петрова</div>
+            <div class="reviews_carousel__title">«Говорящий город» — система радиоинформирования и звукового ориентирования, повышающая доступность городской и транспортной инфраструктуры.</div>
+            <a href="" class="reviews_carousel__link">Читать полностью</a>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="reviews_carousel__item">
+            <div class="reviews_carousel__title b">Анна Петрова</div>
+            <div class="reviews_carousel__title">«Говорящий город» — система радиоинформирования и звукового ориентирования, повышающая доступность городской и транспортной инфраструктуры.</div>
+            <a href="" class="reviews_carousel__link">Читать полностью</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+//= _reviews_form.html
+//= _footer.html
+

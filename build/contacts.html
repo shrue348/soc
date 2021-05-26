@@ -49,72 +49,105 @@
 	</div>
 </div>
 
-<div class="top top_yellow">
-  <div class="wrapper">
-    <h1 class="section_title">Доступная и комфортная городская среда для всех жителей</h1>
+<div class="wrapper">
+  <h1 class="section_title">Контакты</h1>
 
+  <div class="contacts_txt txt">
     <div class="row flex mgb60">
       <div class="col-6">
-        <div class="txt">
-          <p>По статистике доля горожан с ограниченной мобильностью может достигать 41% от общего населения города, поэтому важно обеспечить безбарьерную и комфортную среду в регионе, городе или даже в одном учреждении.</p>
-          <p>Ограничения по мобильности у горожан бывают разные, поэтому мы создали «Говорящий город», который одновременно решает проблемы разных групп населения:<br>
-            инвалиды по зрению, инвалиды-колясочники, люди с другими проблемами опорно-двигательного аппарата и пожилые жители.  Это помогает сэкономить средства при обеcпечении доступности.</p>
-          <p>Мы считаем, что доступная среда должна быть современной, поэтому мы помогаем создавать такую среду с помощью цифровых технологий.</p>
-          <p>О том, какие «боли» поможет решить система, вы можете узнать подробнее ниже.</p>
+        <div class="contacts_txt__item contacts_txt__item-location">
+          Торфяная дорога, д.7, <br>
+          Бизнес-центр “Гулливер-2” <br>
+          Санкт-Петербург, Россия , 197374
+        </div>
+        <div class="contacts_txt__item contacts_txt__item-road">
+          Как добраться <br><br>
+          От станция метро “Старая деревня” <br>
+          5 минут пешком <br><br>
+          От станции метро “Пионерская” троллейбус №40, автобус №93<br><br>
+          От станции метро “Беговая”<br>
+          автобусы №101, №101А, №216
         </div>
       </div>
       <div class="col-6">
-        <div class="top_slider">
-          <img src="img/fixtures/top_slider1.jpg" alt="" class="top_slider__img">
-          <img src="img/fixtures/top_slider2.jpg" alt="" class="top_slider__img">
-          <img src="img/fixtures/top_slider3.jpg" alt="" class="top_slider__img">
+        <div class="contacts_txt__item contacts_txt__item-phone">
+          Телефон отдела маркетинга: <br>
+          +7 (812) 207-12-83
+        </div>
+        <div class="contacts_txt__item contacts_txt__item-fax">
+          Факс: <br>
+          +7 (812) 244-46-72
+        </div>
+        <div class="contacts_txt__item contacts_txt__item-email">
+          Электронная почта: <br>
+          info@stp-ing.com
+        </div>
+
+        <div class="contacts_soc">
+          <a href="" class="contacts_soc__link contacts_soc__link-vk"></a>
+          <a href="" class="contacts_soc__link contacts_soc__link-fb"></a>
+          <a href="" class="contacts_soc__link contacts_soc__link-ok"></a>
+          <a href="" class="contacts_soc__link contacts_soc__link-youtube"></a>
         </div>
       </div>
     </div>
   </div>
 </div>
 
+<div id="contacts_map" class="contacts_map"></div>
 
-<section class="section">
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script>
+  function init() {
+    var myMap = new ymaps.Map("contacts_map", {
+      center: [59.944446, 30.282646],
+      zoom: 16,
+      controls: []
+    }, {
+      searchControlProvider: 'yandex#search'
+    }),
+
+    myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+      hintContent: 'Хинт'
+    }, {
+      iconLayout: 'default#image',
+      iconImageHref: 'img/location_icon.png',
+      iconImageSize: [42, 42],
+      iconImageOffset: [-21, -21]
+    });
+
+    myMap.geoObjects.add(myPlacemark);
+  }
+
+  ymaps.ready(init);
+</script>
+
+
+<section class="section last_news">
   <div class="wrapper">
-    <h2 class="section_title">ГДЕ система ОБЕСПЕЧИВАЕТ ДОСТУПНОСТЬ</h2>
+    <h2 class="section_title">Отзывы</h2>
 
-    <div class="where where_yellow">
+    <div class="reviews_carousel">
       <div class="row">
         <div class="col-6">
-          <div class="where_item">
-            <img src="img/where_yellow1.png" alt="Остановки общественного транспорта" class="where_item__icon">
-            <div class="where_item__info">
-              <div class="where_item__title">Остановки общественного транспорта</div>
-              <div class="where_item__desc">Любые виды остановочных павильонов наземного общественного транспорта</div>
-            </div>
+          <div class="reviews_carousel__item">
+            <div class="reviews_carousel__title b">Анна Петрова</div>
+            <div class="reviews_carousel__title">«Говорящий город» — система радиоинформирования и звукового ориентирования, повышающая доступность городской и транспортной инфраструктуры.</div>
+            <a href="" class="reviews_carousel__link">Читать полностью</a>
           </div>
         </div>
         <div class="col-6">
-          <div class="where_item">
-            <img src="img/where_yellow2.png" alt="Общественный транспорт" class="where_item__icon">
-            <div class="where_item__info">
-              <div class="where_item__title">Общественный транспорт</div>
-              <div class="where_item__desc">Любые виды наземного общественного транспорта: автобусы, троллейбусы, электробусы, трамваи</div>
-            </div>
+          <div class="reviews_carousel__item">
+            <div class="reviews_carousel__title b">Анна Петрова</div>
+            <div class="reviews_carousel__title">«Говорящий город» — система радиоинформирования и звукового ориентирования, повышающая доступность городской и транспортной инфраструктуры.</div>
+            <a href="" class="reviews_carousel__link">Читать полностью</a>
           </div>
         </div>
         <div class="col-6">
-          <div class="where_item">
-            <img src="img/where_yellow3.png" alt="Регулируемые  пешеходные переходы" class="where_item__icon">
-            <div class="where_item__info">
-              <div class="where_item__title">Регулируемые  пешеходные переходы</div>
-              <div class="where_item__desc">Обеспечивает звуковое и речевое дублирование сигналов пешеходных светофоров</div>
-            </div>
-          </div>
-        </div>
-        <div class="col-6">
-          <div class="where_item">
-            <img src="img/where_yellow4.png" alt="Здания любого назначения внутри и снаружи<" class="where_item__icon">
-            <div class="where_item__info">
-              <div class="where_item__title">Здания любого назначения внутри и снаружи</div>
-              <div class="where_item__desc">Социальные и медицинские учреждения, учреждения культуры, учебные заведения, объекты торговли и общественного питания, жилые дома</div>
-            </div>
+          <div class="reviews_carousel__item">
+            <div class="reviews_carousel__title b">Анна Петрова</div>
+            <div class="reviews_carousel__title">«Говорящий город» — система радиоинформирования и звукового ориентирования, повышающая доступность городской и транспортной инфраструктуры.</div>
+            <a href="" class="reviews_carousel__link">Читать полностью</a>
           </div>
         </div>
       </div>
@@ -122,35 +155,39 @@
   </div>
 </section>
 
-
-<div class="partners mgb60">
+<div class="bottom_form bottom_form-reviews">
   <div class="wrapper">
-    <div class="block_title">Партнеры проекта</div>
+    <form class="bottom_form__form">
+      <div class="block_title">Оставить отзыв</div>
 
-    <div class="news_carousel">
       <div class="row">
-        <div class="col-by5">
-          <img src="img/fixtures/partners1.png" alt="" class="news__img">
-        </div>
-        <div class="col-by5">
-          <img src="img/fixtures/partners2.png" alt="" class="news__img">
-        </div>
-        <div class="col-by5">
-          <img src="img/fixtures/partners3.png" alt="" class="news__img">
-        </div>
-        <div class="col-by5">
-          <img src="img/fixtures/partners4.png" alt="" class="news__img">
-        </div>
-        <div class="col-by5">
-          <img src="img/fixtures/partners5.png" alt="" class="news__img">
-        </div>
-        <div class="col-by5">
-          <img src="img/fixtures/partners1.png" alt="" class="news__img">
-        </div>
-        <div class="col-by5">
-          <img src="img/fixtures/partners2.png" alt="" class="news__img">
+        <div class="col-12">
+          <div class="bottom_form__field">
+            <input type="text" name="name" placeholder="Ваше Ф.И.О.*" >
+          </div>
+          <div class="bottom_form__field">
+            <textarea name="text" id="" cols="30" rows="10" placeholder="Ваш отзыв"></textarea>
+          </div>
+          <div class="bottom_form__field aligncenter mgb70">
+            <label>
+              <input type="file" name="file" placeholder="Прикрепить изображение, PDF, WORD" style="display: none;">
+              <span class="js-labelFile btn"> 
+                <span class="js-fileName">Прикрепить изображение, PDF, WORD</span> 
+              </span> 
+            </label> 
+          </div>
+
         </div>
       </div>
+      
+      <div class="aligncenter" style="flex: 1 1 auto">
+        <button type="button" class="bottom_form__submit">Отправить</button>
+      </div>
+    </form>
+
+    <div class="bottom_form__success" style="display: none;">
+      <div class="bottom_form__title">Спасибо</div>
+      <p>Мы свяжемся с вами в ближайшее время...</p>
     </div>
   </div>
 </div>
