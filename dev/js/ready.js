@@ -120,9 +120,15 @@ $(function(){
         }
       },
       {
-        breakpoint: 768,
+        breakpoint: 980,
         settings: {
           slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 1,
         }
       },
       {
