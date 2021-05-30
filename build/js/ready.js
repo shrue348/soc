@@ -256,8 +256,10 @@ $(function(){
 
 
 $(function(){
-  $('.main_menu__link-about').on('click', function(e) {
-    e.preventDefault();
-    $('.about_modal').fadeIn();
-  })
+  // $('.main_menu__link-about').on('click', function(e) {
+  //   e.preventDefault();
+  //   $('.about_modal').fadeIn();
+  // })
+
+  $('.main_menu').timeoutMenu();
 });
