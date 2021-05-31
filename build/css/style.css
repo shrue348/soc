@@ -884,10 +884,13 @@ h2:first-child,
 .services__link:nth-child(3) { grid-area: post-3; }
 .services__link:nth-child(4) { grid-area: post-4; }
 .services__link:nth-child(5) { grid-area: post-5; }
-.services__link { display: block; position: relative; }
+.services__link { display: block; position: relative; overflow: hidden; }
 .services__link:after { position: absolute; content: ''; inset: 0; margin: auto; z-index: 1; background-color: rgba(0,158,224,.7); }
 .services__title { position: absolute; z-index: 2; margin: auto; left: 1.2em; bottom: 1em; right: 1.2em; color: #fff; text-transform: uppercase; font-size: .9em; }
 .services__img { display: block; line-height: 1; height: 100%; width: 100%; -o-object-fit: cover; object-fit: cover; }
+
+.services__link:before { position: absolute; z-index: 1; content: ''; background-color: #fff; height: 190%; width: 70px; transform: rotateZ(6deg); top: -60%; left: -30%; background: linear-gradient(90deg, rgba(16,21,28,0) 0%, rgba(255,255,255,0.8631827731092436) 50%, rgba(16,21,28,0) 100%);} 
+.services__link:hover:before { transition: all 1s ease; transform: rotateZ(6deg) translateX(1300%); } 
 
 .footer_top { background-color: #fff; padding: 4em 0; }
 .footer_top > .wrapper > .row { display: -ms-flexbox; display: flex; -ms-flex-pack: justify; justify-content: space-between; }
@@ -1029,11 +1032,11 @@ h1.section_title { font-weight: 400; }
 
 
 .transport_icon_list li { display: -ms-flexbox; display: flex; -ms-flex-align: start; align-items: flex-start; }
-.txt ul.transport_icon_list > li:before { width: auto; height: auto; background-color: transparent; position: relative; top: 0; margin-right: .66em; }
-.transport_icon_list li:nth-child(1):before { content: url(/img/transport_icon_list1.png); }
-.transport_icon_list li:nth-child(2):before { content: url(/img/transport_icon_list2.png); }
-.transport_icon_list li:nth-child(3):before { content: url(/img/transport_icon_list3.png); }
-.transport_icon_list li:nth-child(4):before { content: url(/img/transport_icon_list4.png); }
+.txt ul.transport_icon_list > li:before { position: relative; top: 0; margin-right: .66em; content: ''; width: 75px; height: 75px; background: none no-repeat scroll center / 100% transparent; -ms-flex: 0 0 75px; flex: 0 0 75px; }
+.txt ul.transport_icon_list li:nth-child(1):before { background-image: url(/img/transport_icon_list1.png); }
+.txt ul.transport_icon_list li:nth-child(2):before { background-image: url(/img/transport_icon_list2.png); }
+.txt ul.transport_icon_list li:nth-child(3):before { background-image: url(/img/transport_icon_list3.png); }
+.txt ul.transport_icon_list li:nth-child(4):before { background-image: url(/img/transport_icon_list4.png); }
 
 .footer_top > .wrapper { position: relative; }
 .top.top_yellow ~ .footer .footer_top > .wrapper:before { position: absolute; margin: auto; left: 0; right: 0; top: -4em; width: 100%; max-width: calc(100% - 2em); content: ''; border-top: 6px solid #c2d317; padding-top: 2em; }
@@ -1059,11 +1062,13 @@ h1.section_title { font-weight: 400; }
 
 .where .row { display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -ms-flex-align: stretch; align-items: stretch; }
 .where .row > [class*=col-] { margin-bottom: 1em; }
-.where_item { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; padding: 2em 1.5em; box-sizing: border-box; height: 100%; font-weight: 500; }
+.where_item { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; padding: 2em 1.5em; box-sizing: border-box; height: 100%; font-weight: 500; transition: all .2s ease; }
 .where_item__icon { margin-right: 1em; }
 .where_item__title { text-transform: uppercase; margin-bottom: .66em; }
-.where.where_yellow .where_item { background-color: #c2d317; }
+.where.where_yellow .where_item { background-color: #c2d317; color: #272727;}
+.where.where_yellow .where_item:hover { background-color: #b3c404; }
 .where.where_blue .where_item { background-color: #009ee0; color: #fff; }
+.where.where_blue .where_item:hover { background-color: #0083c7; color: #fff; }
 
 
 .contacts_txt__item { position: relative; padding-left: 55px; margin-bottom: 30px; }
